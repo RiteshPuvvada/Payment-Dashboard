@@ -1,0 +1,134 @@
+.footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(10, 10, 10, 0.8);
+  }
+  
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 24px;
+  }
+  
+  .brand {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .logoSection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .logo {
+    font-weight: 800;
+    font-size: 20px;
+    background: linear-gradient(135deg, #00FFCC, #00D9B3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .tagline {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 280px;
+  }
+  
+  .author {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: rgba(0, 255, 204, 0.05);
+    border: 1px solid rgba(0, 255, 204, 0.1);
+    border-radius: 16px;
+    font-size: 12px;
+    width: fit-content;
+  }
+  
+  .authorName {
+    color: var(--accent);
+    font-weight: 600;
+  }
+  
+  .section h4 {
+    color: #f1f5f9;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    text-transform: uppercase;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .link {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+  }
+  
+  .link:hover {
+    color: var(--accent);
+  }
+  
+  .bottom {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyright {
+    color: var(--muted);
+    font-size: 12px;
+  }
+  
+  .social {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .socialLink {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+  }
+  
+  .socialLink:hover {
+    background: rgba(0, 255, 204, 0.1);
+    color: var(--accent);
+  }
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }

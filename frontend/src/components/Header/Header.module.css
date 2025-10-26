@@ -1,0 +1,35 @@
+/* src/components/Header/Header.module.css */
+.header {
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 8px 0 28px 0;
+  }
+  
+  .logo {
+    font-weight:700;
+    font-size:20px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    color:#e6fdf6;
+  }
+  
+  .nav {
+    display:flex;
+    gap:18px;
+    align-items:center;
+  }
+  
+  .nav a { color:var(--muted); text-decoration:none; font-size:14px; }
+  
+  .talk {
+    background: var(--accent);
+    color:#041018;
+    border:0;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+  }
+  

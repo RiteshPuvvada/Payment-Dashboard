@@ -1,0 +1,56 @@
+/* src/components/PieChartCard/PieChartCard.module.css */
+.card {
+    position: relative;
+    overflow: visible;
+    background: rgba(13,17,23,0.98);
+    border-radius: var(--radius);
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.03);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius);
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 40%, rgba(0,255,204,0.04), transparent 35%);
+    opacity: 0;
+    transition: opacity .35s ease;
+    z-index: 0;
+  }
+  
+  .card:hover::before { opacity: 1; }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,0.6); }
+  
+  .header {
+    position: relative;
+    z-index: 2;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom: 12px;
+  }
+  
+  .header h3 { margin:0; font-size:18px; color:#f1f5f9; font-weight:600; }
+  .edit {
+    margin-left: 12px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.06);
+    color: var(--muted);
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 3;
+  }
+  .edit:hover{ background:var(--accent); color:#041018; box-shadow: 0 6px 18px rgba(0,255,204,0.12); }
+  
+  .chartContainer { 
+    position: relative; 
+    z-index: 1; 
+    height: 280px; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+  }

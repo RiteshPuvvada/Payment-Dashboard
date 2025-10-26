@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file: .env
+  worker:
+    build: .
+    command: python -m app.worker
+    env_file: .env

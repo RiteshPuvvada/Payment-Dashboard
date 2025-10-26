@@ -1,0 +1,145 @@
+# ----------------------------------------
+# Python
+# ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+
+# Byte-compiled / optimized / DLL files
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+bin/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+pip-wheel-metadata/
+
+# ----------------------------------------
+# Virtual Environments
+# ----------------------------------------
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv.bak/
+
+# ----------------------------------------
+# Logs and Debug
+# ----------------------------------------
+*.log
+*.out
+*.err
+logs/
+celerybeat-schedule
+celerybeat.pid
+nohup.out
+
+# ----------------------------------------
+# Environment Files
+# ----------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+secrets/
+*.key
+*.pem
+
+# ----------------------------------------
+# Databases
+# ----------------------------------------
+*.db
+*.sqlite3
+*.sqlite
+db.sqlite3
+instance/
+migrations/__pycache__/
+migrations/versions/*.py
+
+# ----------------------------------------
+# IDE and Editor Settings
+# ----------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------
+# Docker / Compose
+# ----------------------------------------
+# Build & volumes
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.local.yml
+.docker/
+*.pid
+*.sock
+
+# ----------------------------------------
+# Caches and temporary files
+# ----------------------------------------
+__pycache__/
+.pytest_cache/
+.cache/
+.tox/
+.coverage
+coverage.xml
+nosetests.xml
+htmlcov/
+
+# ----------------------------------------
+# FastAPI / Uvicorn
+# ----------------------------------------
+*.pid
+*.coverage
+*.pytest_cache/
+*.db-journal
+*.log
+*.sqlite3
+
+# ----------------------------------------
+# Redis / Upstash temporary artifacts
+# ----------------------------------------
+dump.rdb
+*.rdb
+*.aof
+
+# ----------------------------------------
+# OS Specific
+# ----------------------------------------
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+Desktop.ini
+
+# ----------------------------------------
+# Optional - if using VSCode Dev Containers
+# ----------------------------------------
+.devcontainer/
+
+# ----------------------------------------
+# Misc
+# ----------------------------------------
+*.tar.gz
+*.zip
+*.tgz
+*.bak
+*.old
+*.tmp
+*.lock

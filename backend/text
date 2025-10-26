@@ -1,0 +1,39 @@
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_01", "source_account": "user_acc_1", "destination_account": "merchant_acc_1", "amount": 10000, "currency": "USD" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_02", "source_account": "user_acc_2", "destination_account": "merchant_acc_3", "amount": 5500, "currency": "EUR" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_03", "source_account": "user_acc_5", "destination_account": "merchant_acc_2", "amount": 25000, "currency": "INR" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_04", "source_account": "user_acc_3", "destination_account": "merchant_acc_5", "amount": 7200, "currency": "GBP" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_05", "source_account": "user_acc_4", "destination_account": "merchant_acc_4", "amount": 18000, "currency": "USD" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_06", "source_account": "user_acc_2", "destination_account": "merchant_acc_6", "amount": 3200, "currency": "AUD" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_07", "source_account": "user_acc_6", "destination_account": "merchant_acc_2", "amount": 9900, "currency": "CAD" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_08", "source_account": "user_acc_1", "destination_account": "merchant_acc_7", "amount": 45000, "currency": "INR" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_09", "source_account": "user_acc_8", "destination_account": "merchant_acc_8", "amount": 1200, "currency": "SGD" }'
+
+curl -X POST http://localhost:8080/v1/webhooks/transactions \
+-H "Content-Type: application/json" \
+-d '{ "transaction_id": "trans_10", "source_account": "user_acc_9", "destination_account": "merchant_acc_1", "amount": 8700, "currency": "USD" }'

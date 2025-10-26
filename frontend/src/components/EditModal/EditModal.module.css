@@ -1,0 +1,128 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    z-index: 9999; /* ensure above charts */
+    animation: fadeIn 0.25s ease;
+  }
+  
+  .modal {
+    width: 520px;
+    background: rgba(13, 17, 23, 0.96);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 0 24px rgba(0, 255, 204, 0.12);
+    color: #e5e7eb;
+    position: relative;
+    z-index: 10000;
+    max-height: 80vh;
+    overflow: hidden;
+  }
+  
+  .modal h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f9fafb;
+  }
+  
+  .list {
+    max-height: 320px;
+    overflow-y: auto;
+    margin: 16px 0;
+    padding-right: 4px;
+  }
+  
+  .list::-webkit-scrollbar {
+    width: 6px;
+  }
+  .list::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 204, 0.15);
+    border-radius: 4px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .name {
+    font-size: 14px;
+    color: #9ca3af;
+  }
+  
+  .input {
+    width: 100px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    color: #fff;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .input:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .cancel {
+    background: transparent;
+    color: var(--muted, #9ca3af);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .cancel:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .save {
+    background: var(--accent, #00ffcc);
+    color: #041018;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 0 14px rgba(0, 255, 204, 0.2);
+    transition: all 0.25s ease;
+  }
+  
+  .save:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.4);
+    transform: translateY(-1px);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

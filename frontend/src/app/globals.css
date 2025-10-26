@@ -1,0 +1,40 @@
+:root {
+  --bg-dark-1: #0a0a0a;
+  --bg-dark-2: #0f0f0f;
+  --bg-dark-3: #111827;
+  --accent: #00ffcc;
+  --muted: #9ca3af;
+  --grid-color: rgba(255, 255, 255, 0.03);
+  --glow: rgba(0, 255, 204, 0.05);
+  --radius: 12px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #0a0a0a;
+  color: #f9fafb;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  z-index: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
