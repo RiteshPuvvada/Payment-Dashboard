@@ -2,7 +2,7 @@
 
 A full-stack application for tracking and managing payment transactions with real-time analytics and webhook support.
 
-## 🏗️ Architecture
+## 🏗️ Architectur
 
 This project consists of:
 - **Backend**: FastAPI-based REST API with async task processing
